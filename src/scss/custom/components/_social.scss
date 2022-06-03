@@ -1,0 +1,20 @@
+
+// 
+// social.scss
+//
+
+.social-list-item {
+    height: 2rem;
+    width: 2rem;
+    line-height: calc(2rem - 4px);
+    display: block;
+    border: 2px solid $gray-600;
+    border-radius: 50%;
+    color: $gray-600;
+    text-align: center;
+    font-size: 12px;
+    &:hover{
+        border-color: darken($gray-600, 2%);
+        color: darken($gray-600, 2%);
+    }
+}  

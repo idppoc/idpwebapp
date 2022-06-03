@@ -1,0 +1,118 @@
+// 
+// widgets.scss
+//
+
+// Simple tile box
+.widget-flat {
+    position: relative;
+    overflow: hidden;
+
+    i {
+        position: absolute;
+        bottom: -20px;
+        font-size: 78px;
+        opacity: 0.25;
+        left: 0;
+        transition: bottom 0.5s ease 0s;
+    }
+
+    &:hover {
+        i {
+            bottom: 0;
+        }
+    }
+}
+
+// Inbox-widget(Used Profile)
+.inbox-widget {
+    .inbox-item {
+        border-bottom: 1px solid rgba($border-color, 0.5);
+        overflow: hidden;
+        padding: 0.625rem 0;
+        position: relative;
+
+        &:last-of-type {
+            border-bottom: none;
+        }
+
+        .inbox-item-img {
+            display: block;
+            float: left;
+            margin-right: 15px;
+            width: 40px;
+            margin-top: 3px;
+
+            img {
+                width: 40px;
+            }
+        }
+
+        .inbox-item-author {
+            color: $text-color-h;
+            display: block;
+            margin: 0;
+            font-weight: $label-font-weight;
+        }
+
+        .inbox-item-text {
+            color: $text-muted;
+            display: block;
+            font-size: 0.8125rem;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .inbox-item-date {
+            color: $gray-600;
+            font-size: 0.6875rem;
+            position: absolute;
+            right: 5px;
+            top: 10px;
+        }
+    }
+}
+
+
+
+/* Comment List */
+.comment-list {
+    .comment-box-item {
+        position: relative;
+
+        .commnet-item-date {
+            color: $text-muted;
+            font-size: 11px;
+            position: absolute;
+            right: 7px;
+            top: 2px;
+        }
+
+        .commnet-item-msg {
+            color: $dark;
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 6px;
+            font-size: 15px;
+            line-height: 24px;
+        }
+
+        .commnet-item-user {
+            color: $text-muted;
+            display: block;
+            font-size: 14px;
+            margin: 0;
+        }
+    }
+
+    a+a {
+        margin-top: 15px;
+        display: block;
+    }
+}
+
+// CHart
+.knob-chart {
+    > div {
+        display: inherit !important;
+    }
+}

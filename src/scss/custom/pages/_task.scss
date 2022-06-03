@@ -1,0 +1,47 @@
+// 
+// _task.scss
+// 
+
+
+.task-detail {
+    .task-tags{
+        .bootstrap-tagsinput {
+          padding: 0px;
+          border: none;
+          background-color: transparent;
+        }
+    }
+    .files-list{
+        .file-box {
+            display: inline-block;
+            vertical-align: middle;
+            width: 80px;
+            padding: 2px;
+            border-radius: 4px;
+            background-clip: padding-box;
+
+            img {
+                line-height: 70px;
+            }
+            p {
+                width: 100%;
+                display: block;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+        }
+    }
+    
+    .add-new-plus {
+        height: 32px;
+        text-align: center;
+        width: 32px;
+        display: block;
+        line-height: 32px;
+        color: $text-muted;
+        font-weight: 700;
+        background-color: $light;
+        border-radius: 50%;
+    }
+}

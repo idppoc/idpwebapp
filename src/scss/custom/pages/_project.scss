@@ -1,0 +1,11 @@
+// 
+// project.scss
+//
+
+.project-box{
+    .project-desc-list{
+        .list-inline-item:not(:last-child){
+            margin-right: 2.25rem;
+        }
+    }
+}
