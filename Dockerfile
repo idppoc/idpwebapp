@@ -1,7 +1,7 @@
 FROM node:latest AS js_build
 COPY . /webapp
 WORKDIR webapp
-RUN npm install -g npm@8.12.1 && npm run build
+RUN npm install -g npm@8.12.1 && npm install --force && npm run build
 
 FROM docker.io/madhukirans/idpapiserver:20220609164249 AS go_build
 
