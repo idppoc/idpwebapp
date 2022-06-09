@@ -10,7 +10,7 @@ All notable changes to this project will be documented in this file. Dates are d
 - refactor: polyfills cleanup [`9522ade`](https://github.com/coreui/coreui-free-react-admin-template/commit/9522ade1f1eb2c5a26d5208fe6e44be803123bd2)
 - test: refactor, import temp update [`f3f91c5`](https://github.com/coreui/coreui-free-react-admin-template/commit/f3f91c5d721754a2dac26143f312415c94c7ed68)
 - chore: React 17 and dependencies update [`f6a710f`](https://github.com/coreui/coreui-free-react-admin-template/commit/f6a710ffd6996c9b6b026b8eebed6ff390757fe1)
-- fix(_nav): no anonymous default export [`ed83c9a`](https://github.com/coreui/coreui-free-react-admin-template/commit/ed83c9a3d4199b8c6566a6e01396cdcbca80cf42)
+- fix(\_nav): no anonymous default export [`ed83c9a`](https://github.com/coreui/coreui-free-react-admin-template/commit/ed83c9a3d4199b8c6566a6e01396cdcbca80cf42)
 
 #### [3.1.1](https://github.com/coreui/coreui-free-react-admin-template/compare/3.1.0...3.1.1)
 
@@ -33,7 +33,7 @@ All notable changes to this project will be documented in this file. Dates are d
 - chore: 3.1.0 release - update dependencies [`92f55b8`](https://github.com/coreui/coreui-free-react-admin-template/commit/92f55b8cdfd748a9e72649d5da62b93015a1c8e6)
 - refactor: add reusable folder with DocsLink component [`eef84db`](https://github.com/coreui/coreui-free-react-admin-template/commit/eef84dbbd770c7253080a6f69443c40e4fecefd2)
 - feat: add CSwitch examples to forms [`b31e452`](https://github.com/coreui/coreui-free-react-admin-template/commit/b31e452fd0ea736763d3032d7204cd478863b505)
-- refactor: add CIcon example in _nav.js [`be5d1f0`](https://github.com/coreui/coreui-free-react-admin-template/commit/be5d1f0618f981f18c45be87afb56c4409bd3389)
+- refactor: add CIcon example in \_nav.js [`be5d1f0`](https://github.com/coreui/coreui-free-react-admin-template/commit/be5d1f0618f981f18c45be87afb56c4409bd3389)
 
 ### [3.0.0](https://github.com/coreui/coreui-free-react-admin-template/compare/v2.6.1...3.0.0)
 

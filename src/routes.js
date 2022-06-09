@@ -50,6 +50,26 @@ const Toasts = React.lazy(() => import('./views/notifications/toasts/Toasts'))
 
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'))
 
+//Build
+const PipelineRun = React.lazy(() => import('./views/build/pipelinerun'))
+const Builds = React.lazy(() => import('./views/build/builds'))
+const BuildOverview = React.lazy(() => import('./views/build/BuildOverview'))
+
+//Home
+const Home = React.lazy(() => import('./views/home/Home'))
+
+//Projects
+const Projects = React.lazy(() => import('./views/projects/Projects'))
+
+//Products un deploy
+const Products = React.lazy(() => import('./views/deploy/Products'))
+
+//Cost
+const CostOverview = React.lazy(() => import('./views/cost/CostOverview'))
+
+//Provisioning
+
+//Deploy
 const routes = [
   { path: '/', exact: true, name: 'Home' },
   { path: '/dashboard', name: 'Dashboard', element: Dashboard },
@@ -94,7 +114,20 @@ const routes = [
   { path: '/notifications/badges', name: 'Badges', element: Badges },
   { path: '/notifications/modals', name: 'Modals', element: Modals },
   { path: '/notifications/toasts', name: 'Toasts', element: Toasts },
+
+  { path: '/build', name: 'Build', element: Alerts, exact: true },
+  { path: '/build/builds', name: 'Builds', element: Builds },
+  { path: '/build/pipelinerun', name: 'PipelineRun', element: PipelineRun },
+  { path: '/build/overview', name: 'BuildOverview', element: BuildOverview },
+
   { path: '/widgets', name: 'Widgets', element: Widgets },
+
+  { path: '/home', name: 'Home', element: Home },
+  { path: '/projects', name: 'Projects', element: Projects },
+
+  { path: '/deploy/gitops', name: 'Products', element: Products },
+
+  { path: '/cost/overview', name: 'CostOverview', element: CostOverview },
 ]
 
 export default routes

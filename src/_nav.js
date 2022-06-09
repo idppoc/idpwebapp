@@ -10,13 +10,13 @@ import {
   cilWallpaper,
   cilCloudUpload,
 } from '@coreui/icons'
-import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
+import { CNavGroup, CNavGroupItems, CNavItem, CNavTitle } from '@coreui/react'
 
 const _nav = [
   {
     component: CNavItem,
     name: 'Home',
-    to: '/dashboard',
+    to: '/home',
     icon: <CIcon icon={cilHome} customClassName="nav-icon" />,
     badge: {
       color: 'info',
@@ -25,15 +25,6 @@ const _nav = [
   {
     component: CNavTitle,
     name: 'Components',
-  },
-  {
-    component: CNavItem,
-    name: 'Welcome',
-    to: '/welcome',
-    icon: <CIcon icon={cilWallpaper} customClassName="nav-icon" />,
-    badge: {
-      color: 'info',
-    },
   },
   {
     component: CNavItem,
@@ -47,7 +38,7 @@ const _nav = [
   {
     component: CNavItem,
     name: 'Dashboards',
-    to: '/dashboards',
+    to: '/dashboard',
     icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
     badge: {
       color: 'info',
@@ -126,6 +117,11 @@ const _nav = [
       color: 'info',
     },
     items: [
+      {
+        component: CNavItem,
+        name: 'Overview',
+        to: '/provisioning/overview',
+      },
       {
         component: CNavItem,
         name: 'AWS',
