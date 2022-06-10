@@ -1,24 +1,45 @@
 import React from 'react'
-import { CCard, CCardBody, CCardHeader } from '@coreui/react'
+import {
+  CButton,
+  CCard,
+  CCardBody,
+  CCardFooter,
+  CCardGroup,
+  CCardHeader,
+  CCardImage,
+  CCardLink,
+  CCardSubtitle,
+  CCardText,
+  CCardTitle,
+  CListGroup,
+  CListGroupItem,
+  CNav,
+  CNavItem,
+  CNavLink,
+  CCol,
+  CRow,
+} from '@coreui/react'
+import ReactImg from 'src/assets/images/react.jpg'
 
 const ProductCard = (props) => {
   console.log("--------", props)
   return (
-    <CCard>
-      <CCardHeader style={{ backgroundColor: '#37444f' }}>
-        {/* eslint-disable-next-line react/prop-types */}
-        {/*<div style={{ color: 'blue' }}>Product: {props.data.product}</div>*/}
-      </CCardHeader>
-      <CCardBody style={{ backgroundColor: 'whitespace' }}>
-        <b>
-          <div style={{ color: 'blue' }}>Product: {props.data.product}</div>
-          <div style={{ color: 'green' }}>gitLoc: {props.data.gitLoc}</div>
-          <div style={{ color: 'blue' }}>clusterName: {props.data.clusterName}</div>
-          <div style={{ color: 'red' }}>cloud: {props.data.cloud}</div>
-          <div style={{ color: 'blue' }}>account: {props.data.account}</div>
-        </b>
-      </CCardBody>
-    </CCard>
+     <CCol xs>
+       <CCard>
+         <CCardImage orientation="top" src={ReactImg} />
+         <CCardBody>
+           <CCardTitle>Product: {props.data.product}</CCardTitle>
+         </CCardBody>
+         <CListGroup flush>
+              <CListGroupItem>gitLoc: {props.data.gitLoc}</CListGroupItem>
+              <CListGroupItem>clusterName: {props.data.clusterName}</CListGroupItem>
+              <CListGroupItem>cloud: {props.data.cloud}</CListGroupItem>
+            </CListGroup>
+         <CCardFooter>
+           <small className="text-medium-emphasis">Last updated 3 mins ago</small>
+         </CCardFooter>
+       </CCard>
+     </CCol>
   )
 }
 

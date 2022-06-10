@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react'
-import {CCard} from '@coreui/react'
+import {CCardm, CRow} from '@coreui/react'
 import axios from 'axios'
 import ProductCard from './ProductCard'
 
@@ -21,9 +21,11 @@ const Products = () => {
 
   return (
     <div className="col">
-      {products && products.length > 0 && products.map((v, i) => {
-        return <CCard className="mb-4"> <ProductCard key={i} data={v}/> </CCard>
-      })}
+      <CRow xs={{ cols: 1, gutter: 4 }} md={{ cols: 3 }}>
+        {products && products.length > 0 && products.map((v, i) => {
+          return <ProductCard key={i} data={v}/>
+        })}
+      </CRow>
     </div>
   )
 }
