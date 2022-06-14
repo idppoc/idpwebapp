@@ -3,7 +3,7 @@ COPY . /webapp
 WORKDIR webapp
 RUN npm install -g npm@8.12.1 && npm install --force && npm run build
 
-FROM docker.io/madhukirans/idpapiserver:20220609164249 AS go_build
+FROM docker.io/madhukirans/idpapiserver:20220614115137 AS go_build
 
 FROM alpine:latest
 RUN apk add libc6-compat
