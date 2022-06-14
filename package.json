@@ -29,8 +29,8 @@
     "gulp-sequence": "^1.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify": "^3.0.2",
-    "tar": "^6.0.1",
-    "sass": "^1.45.0"
+    "sass": "^1.45.0",
+    "tar": "^6.0.1"
   },
   "dependencies": {
     "@adactive/bootstrap-tagsinput": "^0.8.2",
@@ -42,6 +42,7 @@
     "@fullcalendar/timegrid": "^4.4.0",
     "admin-resources": "git+https://github.com/coderthemes/admin-resources.git#master",
     "autonumeric": "^1.9.39",
+    "axios": "^0.27.2",
     "bootstrap": "^4.5.0",
     "bootstrap-colorpicker": "^3.2.0",
     "bootstrap-datepicker": "^1.8.0",
