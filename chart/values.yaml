@@ -4,7 +4,7 @@
 replicaCount: 1
 image:
   repository: sanumala123/idpwebapp
-  tag: v5
+  tag: v6
   pullSecret: regcred
   pullPolicy: IfNotPresent
   # for local development against Minikube registry
